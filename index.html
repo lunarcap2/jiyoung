@@ -1,76 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style type="text/css">
-        * {margin: 0; padding: 0;}
-         
-         .lb {width: 50px; height: 50px; background: orangered;}
-         .rb {width: 50px; height: 50px; background: dodgerblue;}
-         .test { width: 10px; height: 500px; background-color: skyblue; transform: rotate(0deg); transition: 1s;}
-         .tt {width: 10px; height: 10px; background: black; top: 50px; left: 60px; position: relative;} 
-         .btn_wrap { text-align: center; padding: 30px 0 50px;}
-         .test_wrap { text-align: center; margin:0 auto;}
-         .test { text-align: center; margin:0 auto;}
-         .txt_value {text-align: center; padding-top: 30px;}
-        </style>
-
 </head>
-<script src="swiper.min.js"></script>
- <script src="jquery-latest.min.js"></script>
-
- <!-- <script type="text/javascript">
-    $(function () {
-        var angle = 0;
-        $(".lb").click(function(){
-            angle -= 30;
-            $(".test").stop().css({'transform': 'rotate('+angle+'deg)'},1000);
-        });
-    
-        $(".rb").click(function(){
-            angle += 30;
-            $(".test").stop().css({'transform': 'rotate('+angle+'deg)'},1000);
-        });
-    });
-    </script> -->
-
-
-<script>
-
-    $(function () {
-        var matrix = $(".test").css('transform').split('(')[1].split(')')[0].split(',');//matrix의 괄호()안 값만 추출
-        var angle = Math.round((180/Math.PI) * Math.atan2(matrix[1], matrix[0]));//matrix 첫번째, 두번째 값을 가지고 각도 구하기
-        $(".lb").click(function(){
-            angle = angle - 30;
-            $(".test").stop().css({'transform': 'rotate('+angle+'deg)'},1000);
-        });
-        $(".rb").click(function(){
-            angle += 30;
-            $(".test").stop().css({'transform': 'rotate('+angle+'deg)'},1000);
-        });
-
-        if ( getRotationDegrees == 60 ) {
-            $('.txt_value').text('!!!!!!!')
-        }
-    });
-    </script>
-
 <body>
-    <div class="btn_wrap">
-        <button class="lb"></button>
-        <button class="rb"></button>
-    </div>
-
-    <div class="test_wrap">
-        <div class="test">
-            <div class="tt"></div>
-        </div>
-    </div>
-    
-    <p class="txt_value">140km</p>
-    <!-- -30deg : 100 km , 0 : 140kg, 30deg : 180deg 되게 해주세요 -->
+    <img src="1111.jpg" alt="" style="width:100%;">
 </body>
 </html>
